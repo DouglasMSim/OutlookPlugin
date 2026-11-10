@@ -45,10 +45,12 @@ Nothing below has been run yet. Fill in as fixtures are executed (see [test-plan
 | F20 Separate window | Untested | | Untested | | Pass (pop-ups allowed) | |
 | F21 Old build | Untested | | n/a | | n/a | |
 | F22 Shared From identity | | Untested | | Untested | | Untested |
+| F23 Admin deploy auto-pins | n/a | | Untested | | Untested | |
 
 ### Run log
 
 | Date | Tester | Client + build | Mailbox | Fixtures | Result | Notes |
 |---|---|---|---|---|---|---|
 | 2026-11-10 | Owner | Outlook on the web, Microsoft Edge (build not recorded) | Primary | Informal check, F20 | Pass after fix | Real received message with one .docx. Reading pane: Reply All opened with the sender and the file attached. Separate window: nothing happened until pop-ups were allowed for `https://outlook.cloud.microsoft`, then it worked. Draft discarded; nothing sent, so delivery and bytes were not checked. |
+| 2026-11-10 | Owner | Outlook on the web, Microsoft Edge | Primary | Pinning | Pass | Self-installed add-in pinned via Apps → right-click → Pin; it then showed next to Reply / Reply all / Forward. The Settings → Mail → Customize actions page has no add-in option in this version. |
 | | | | | | | |
