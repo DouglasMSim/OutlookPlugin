@@ -30,6 +30,7 @@ Use controlled test mailboxes only. Hash files before sending and after receivin
 | F20 | Message opened in its own window (not the reading pane) | Click from that window | Correct message and files. |
 | F21 | Old classic Outlook build (< Version 2412), if available | Open a message | Record what appears. Expected: no button; the fallback pane says the version is too old. |
 | F22 | Shared mailbox (F1 to F3 again) | As F1 | As F1, and the received message shows the expected **From** identity. |
+| F23 | Admin deployment via Integrated Apps to the pilot group | Sign in as a pilot user who never self-installed | Record whether the button is already pinned next to Reply / Reply all / Forward in new Outlook and on the web, or must be pinned by hand. |
 
 ## Failed reads
 

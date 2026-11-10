@@ -8,6 +8,8 @@ The pilot build is hosted at **https://douglasmsim.github.io/OutlookPlugin/**, w
 2. Sign in to a **Microsoft 365 test mailbox** at https://aka.ms/olksideload. Outlook on the web opens with the add-ins window.
 3. **My add-ins → Custom Addins → Add a custom add-in → Add from File**, choose the manifest, then **Install**.
 4. The install belongs to the mailbox. Classic and new Outlook for Windows pick it up after a restart (allow a few minutes).
+5. **Pin it (new Outlook and Outlook on the web):** select an email, click **Apps** on the ribbon, right-click **Reply All with Attachments** → **Pin**. It then shows on the ribbon and next to Reply / Reply all / Forward. Fallback: on an open email, **…** at the end of that row → **Customize actions** → tick it under **Add-ins**. (Confirmed working in Outlook on the web, 2026-11-10.) Self-installed add-ins can't pin themselves; each user does this once.
+6. **Outlook on the web only:** allow pop-ups for Outlook. Otherwise the button silently does nothing when a message is opened in its own window. In Edge, click the pop-up-blocked icon in the address bar and choose **Always allow pop-ups and redirects from https://outlook.cloud.microsoft**, or add that address under **Allow** at `edge://settings/content/popups`.
 
 If **Add a custom add-in** is missing, tenant policy blocks personal add-ins. Ask the admin to deploy via Integrated Apps ([pilot-deployment.md](pilot-deployment.md)).
 
