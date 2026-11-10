@@ -1,0 +1,33 @@
+{
+  "name": "reply-all-with-attachments",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Outlook add-in that opens a native Reply All with the selected message's files already attached.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:dev": "node scripts/build.mjs --env dev",
+    "manifests": "node scripts/manifests.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:browser": "node test/browser/smoke.mjs",
+    "validate:manifest": "node scripts/validate-manifest.mjs",
+    "verify": "npm run typecheck && npm test && npm run manifests -- --check && npm run validate:manifest && npm run build && npm run test:browser",
+    "start": "npm run build:dev && node scripts/dev-server.mjs",
+    "dev-certs": "office-addin-dev-certs install"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/office-js": "1.0.614",
+    "esbuild": "0.28.2",
+    "office-addin-dev-certs": "3.0.1",
+    "office-addin-manifest": "3.0.1",
+    "playwright-core": "^1.63.0",
+    "typescript": "7.0.2",
+    "vitest": "4.1.12"
+  }
+}

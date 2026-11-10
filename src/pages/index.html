@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Install Reply All with Attachments</title>
+  <link rel="icon" type="image/png" href="assets/icon-32.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Reply All with Attachments: pilot install</h1>
+    <p>An Outlook button that opens a normal Reply All with the message's files already attached.</p>
+
+    <div class="actions">
+      <a class="button primary" href="manifest.xml" download="reply-all-with-attachments-manifest.xml">Download manifest.xml</a>
+    </div>
+
+    <h2>Install in your mailbox</h2>
+    <ol>
+      <li>Download <strong>manifest.xml</strong> with the button above.</li>
+      <li>Open <a href="https://aka.ms/olksideload" target="_blank" rel="noopener">aka.ms/olksideload</a> and sign in with your Microsoft 365 work mailbox. It opens Outlook on the web with the add-ins window.</li>
+      <li>Choose <strong>My add-ins</strong>. Under <strong>Custom Addins</strong>, choose <strong>Add a custom add-in</strong> → <strong>Add from File</strong>.</li>
+      <li>Select the downloaded file and choose <strong>Install</strong>.</li>
+      <li>Open a message that has attachments and look for <strong>Reply All with Attachments</strong>.
+        <ul>
+          <li>Classic Outlook for Windows: the Home ribbon, or the message's Message tab when it's open in its own window.</li>
+          <li>New Outlook for Windows and Outlook on the web: the <strong>Apps</strong> button, or the <strong>…</strong> menu on the message.</li>
+        </ul>
+      </li>
+    </ol>
+    <p class="muted">The install belongs to your mailbox, so it also appears in classic and new Outlook for Windows after they restart. It can take a few minutes to show up.</p>
+
+    <h2>If “Add a custom add-in” is missing</h2>
+    <p>Your organization blocks personal add-ins. Ask your Microsoft 365 admin to deploy this manifest to a pilot group from the Microsoft 365 admin center (<strong>Settings → Integrated apps → Upload custom apps</strong>).</p>
+
+    <h2>Remove it</h2>
+    <p>Open <a href="https://aka.ms/olksideload" target="_blank" rel="noopener">aka.ms/olksideload</a>, find the add-in under <strong>Custom Addins</strong>, choose <strong>…</strong> → <strong>Remove</strong>.</p>
+
+    <h2>Privacy</h2>
+    <p class="muted">Messages and files are handled entirely inside Outlook. This site only serves the add-in's code; nothing about your mail is sent here.</p>
+  </main>
+</body>
+</html>

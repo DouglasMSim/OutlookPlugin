@@ -1,0 +1,12 @@
+{
+  "dev": {
+    "origin": "https://localhost:3000",
+    "id": "b6102d89-f494-494b-b505-f44f781ddd97",
+    "displayName": "Reply All with Attachments (Dev)"
+  },
+  "pilot": {
+    "origin": "https://douglasmsim.github.io/OutlookPlugin",
+    "id": "7db00ae2-968a-4085-b891-51456ac34d44",
+    "displayName": "Reply All with Attachments"
+  }
+}
