@@ -12,6 +12,7 @@ Requires Global Administrator or Exchange Administrator.
 4. **Assign users**: choose **Specific users/groups** and pick the IT test group. Don't choose "Entire organization" for the pilot.
 5. Accept the permission request. The add-in asks for **Read item** only: it can read the selected message and its attachments, and cannot send mail or read other items.
 6. Deploy. It can take up to 24 hours (usually less) to reach every client. Users restart Outlook to pick it up.
+7. For users of Outlook on the web, allow pop-ups for Outlook, or the button does nothing when a message is opened in its own window. In Edge or Chrome, set the `PopupsAllowedForUrls` policy to include `https://outlook.cloud.microsoft` and `https://outlook.office.com` (Intune or Group Policy).
 
 Microsoft's reference: https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins
 

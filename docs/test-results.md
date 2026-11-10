@@ -42,7 +42,7 @@ Nothing below has been run yet. Fill in as fixtures are executed (see [test-plan
 | F17 Switch messages | Untested | | Untested | | Untested | |
 | F18 Cancel draft | Untested | | Untested | | Untested | |
 | F19 Conversation view | Untested | | Untested | | Untested | |
-| F20 Separate window | Untested | | Untested | | Untested | |
+| F20 Separate window | Untested | | Untested | | Pass (pop-ups allowed) | |
 | F21 Old build | Untested | | n/a | | n/a | |
 | F22 Shared From identity | | Untested | | Untested | | Untested |
 
@@ -50,4 +50,5 @@ Nothing below has been run yet. Fill in as fixtures are executed (see [test-plan
 
 | Date | Tester | Client + build | Mailbox | Fixtures | Result | Notes |
 |---|---|---|---|---|---|---|
+| 2026-11-10 | Owner | Outlook on the web, Microsoft Edge (build not recorded) | Primary | Informal check, F20 | Pass after fix | Real received message with one .docx. Reading pane: Reply All opened with the sender and the file attached. Separate window: nothing happened until pop-ups were allowed for `https://outlook.cloud.microsoft`, then it worked. Draft discarded; nothing sent, so delivery and bytes were not checked. |
 | | | | | | | |
